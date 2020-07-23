@@ -36,8 +36,10 @@ try:
                         pass
             end_of_filename_nr = str(end_of_filename_nr)
             if len(end_of_filename_nr) == 1:
-                end_of_filename_nr = "00" + end_of_filename_nr
+                end_of_filename_nr = "000" + end_of_filename_nr
             elif len(end_of_filename_nr) == 2:
+                end_of_filename_nr = "00" + end_of_filename_nr
+            elif len(end_of_filename_nr) == 3:
                 end_of_filename_nr = "0" + end_of_filename_nr
             N_FILENAME = R_FILENAME + " " + end_of_filename_nr
 
