@@ -1,6 +1,6 @@
 # Multiple File Renamer
 
-A program that renames/appends every file's name with a specified new filename
+A program that renames/appends every file's name with a specified new filename in any given directory
 
 ## Installation
 
