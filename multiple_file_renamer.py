@@ -11,6 +11,18 @@ try:
             APPEND = "Start"
         elif sys.argv[3] == "e":
             APPEND = "End"
+        elif sys.argv[3] != "s" and sys.argv[3] != "e":
+            print("Please enter a valid APPEND argument or leave it blank")
+            print("Valid commands are 's' and 'e'")
+            print("- 's' appends to the start of the filename")
+            print("- 'e' appends to the end of the filename")
+            print("- Leaving it blank will change all filenames in the directory to the specified name in a numerical "
+                  "increasing order")
+            exit()
+        if len(sys.argv) > 4:
+            print("Please only enter three arguments max and two minimum")
+            print("example: python multiple_file_renamer.py /home/user/Downloads/test test e")
+            exit()
 
     files_in_dir = listdir(PATH)
 
