@@ -59,7 +59,6 @@ try:
         rename(PATH + "/" + O_FILENAME, PATH + "/" + N_FILENAME)
 
 except IndexError:
-    print("\n#########################################################################################")
     print("Please enter valid arguments")
     print("Example: python multiple_file_renamer.py 'PATH' 'NEW_NAME' '{OPTIONAL: APPEND_LOCATION}'")
     print("APPEND_LOCATION has 2 options")
@@ -67,4 +66,3 @@ except IndexError:
     print("- 's' appends string to start of file")
     print("leaving it blank will rename all files in directory in an numerical fashion with the NEW_NAME")
     print("as prefix and end of file with increasing numbers")
-    print("#########################################################################################\n")
